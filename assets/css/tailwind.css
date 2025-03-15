@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400&display=swap');
+@import "tailwindcss";
+
+
+body{
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.bg-dot{
+    background: url(/assets/images/bg-dot.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 220px;
+    height: 240px;
+}
