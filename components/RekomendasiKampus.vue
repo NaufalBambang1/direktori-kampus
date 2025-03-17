@@ -1,5 +1,5 @@
 <template>
-    <div class="py-[20px] md:py-[72px] relative px-4">
+    <div class="py-[20px] md:py-[50px] relative px-4">
         <div class="bg-dot left-20 top-[100px] -z-50 hidden lg:block"></div>
         <div class="container mx-auto">
             <div>

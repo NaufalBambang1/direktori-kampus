@@ -1,7 +1,7 @@
 <template>
     <div class="flex py-[20px] gap-2 md:gap-10">
         <div
-            class="w-1/6 min-h-[19vw] max-h-[27vw] md:max-h-[19vw] cursor-pointer bg-[position:100%_0] bg-cover"
+            class="w-1/6 min-h-[19vw] max-h-[27vw] md:max-h-[19vw] cursor-pointer bg-[position:100%_0] bg-cover rounded-lg"
             :style="{ backgroundImage: `linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.45) 100%), url(${getImageUrl(prevImage)})` }"
             @click="prevSlide">
         </div>
@@ -9,7 +9,7 @@
             <div class="relative flex w-full transition-transform duration-500 ease-in-out"
                 :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
                 <div v-for="item in banner" :key="item.id" class="flex-shrink-0 w-full max-h-[364px]">
-                    <img :src="getImageUrl(item.image)" class="w-full h-full object-cover min-h-[19vw] max-h-[27vw] md:max-h-[19vw]"/>
+                    <img :src="getImageUrl(item.image)" class="w-full h-full object-cover min-h-[19vw] max-h-[27vw] md:max-h-[19vw] rounded-lg"/>
                 </div>
             </div>
 
@@ -20,8 +20,8 @@
             </div>
         </div>
         <div
-            class="w-1/6 min-h-[19vw] max-h-[27vw] md:max-h-[19vw] cursor-pointer bg-cover bg-gradient-to-r from-white to-white/45"
-            :style="{ backgroundImage: `linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.45) 100%), url(${getImageUrl(nextImage)})` }"
+            class="w-1/6 min-h-[19vw] max-h-[27vw] md:max-h-[19vw] cursor-pointer bg-cover bg-gradient-to-r from-white to-white/45 rounded-lg"
+            :style="{ backgroundImage: `linear-gradient(90deg, rgba(255, 255, 255, 0.45) 50%, rgba(255, 255, 255) 100%), url(${getImageUrl(nextImage)})` }"
             @click="nextSlide">
         </div>
     </div>

@@ -4,7 +4,7 @@
       <!-- Slider Banner -->
       <SliderBanner/>
 
-      <div class="container mx-auto my-[20px] sm:my-[72px] px-4">
+      <div class="container mx-auto my-[20px] sm:my-[50px] px-4">
         <div class="bg-gradient-to-br from-[#126ABB] to-[#0AB6C1] py-[30px] px-[40px] rounded-xl">
           <div class="grid grid-cols-1 md:grid-cols-2 xl:flex xl:flex-row gap-5 items-center">
             <div class="flex ">
